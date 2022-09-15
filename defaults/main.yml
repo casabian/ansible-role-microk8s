@@ -5,6 +5,9 @@ microk8s_cache_valid_time: 3600
 ## version management
 microk8s_disable_snap_autoupdate: false
 
+## allows setting of of snap channel
+microk8s_snap_channel: latest/stable
+
 ## plugin configuration
 # microk8s_plugins:
 #   dashboard: false        # The Kubernetes dashboard
@@ -53,4 +56,3 @@ microk8s_group_ha: "microk8s_HA"
 
 # regex to select IP address for joining nodes in HA setup
 microk8s_ip_regex_ha: "([0-9]{1,3}[\\.]){3}[0-9]{1,3}"
-...

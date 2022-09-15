@@ -32,6 +32,7 @@
 - name: Install microk8s
   community.general.snap:
     name: microk8s
+    channel: "{{ microk8s_snap_channel }}"
     classic: true
   notify: microk8s ready
   tags:
@@ -109,4 +110,3 @@
     - notest
     - microk8s
     - microk8s.disable_autoupdate
-...
